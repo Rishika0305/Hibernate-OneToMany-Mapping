@@ -3,7 +3,7 @@
 <hibernate-configuration>
     <session-factory>
         <!-- Oracle JDBC driver -->
-        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
 
         <!-- Replace XE with your Oracle service name or SID -->
         <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernate-ontomany</property>
@@ -16,9 +16,9 @@
         <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
 
         <!-- Schema management -->
-<!--
+
 	        <property name="hibernate.hbm2ddl.auto">update</property>
--->
+
         <!-- Show SQL in console -->
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
