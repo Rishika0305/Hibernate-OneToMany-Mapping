@@ -1,35 +1,74 @@
-Project Overview
-This project demonstrates the implementation of a **One-to-Many relationship** using **Hibernate ORM** with **Java** and **MySQL**.
+# Hibernate One-to-Many Mapping
 
-In this project:
+## 📌 Project Overview
+
+This project demonstrates the implementation of a **One-to-Many relationship** using **Hibernate ORM**, **Java**, and **MySQL**.
+
+### Features
 - One Department can have multiple Employees.
-- Hibernate XML Mapping (`.hbm.xml`) is used.
-- MySQL is used as the backend database.
-- Maven is used for dependency management.
+- Hibernate XML Mapping (`.hbm.xml`)
+- MySQL database integration
+- Maven dependency management
+- Transaction management
+- Automatic table creation
 
-Technologies Used
+## 🛠 Technologies Used
+
 - Java
 - Hibernate ORM
 - Maven
 - MySQL
 - Eclipse IDE
 
-## How to Run
+## 📂 Project Structure
+
+```
+src/
+├── main/
+│   ├── java/
+│   │   ├── Dept.java
+│   │   ├── Emp.java
+│   │   └── DeptEmpSaveClient.java
+│   └── resources/
+│       ├── hibernate.cfg.xml
+│       └── Emp.hbm.xml
+```
+
+## 🗄 Database
+
+Database Name:
+
+```
+hibernate-ontomany
+```
+
+Tables:
+- dept
+- emp
+
+## ▶️ How to Run
 
 1. Create a MySQL database named `hibernate-ontomany`.
-2. Configure the database username and password in `hibernate.cfg.xml`.
+2. Configure database username and password in `hibernate.cfg.xml`.
 3. Run `DeptEmpSaveClient.java`.
-4. Hibernate will create the required tables automatically.
+4. Hibernate automatically creates the required tables.
+5. Department and Employee records are inserted successfully.
 
-## Features
-- One-to-Many Mapping
-- Many-to-One Mapping
-- Hibernate SessionFactory
-- Transaction Management
-- Automatic Table Creation
-- Cascade Operations
+## 🔗 Relationship
 
-## Output
+```
+Department (1)
+     │
+     └────────► Employee (Many)
+```
 
-- Creates `dept` and `emp` tables.
-- Inserts one department and multiple employee records successfully.
+## 📷 Output
+
+- Tables `dept` and `emp` are created.
+- One department is inserted.
+- Multiple employees are inserted.
+- Foreign key relationship is maintained successfully.
+
+## 👩‍💻 Author
+
+**Rishika Vangala**
