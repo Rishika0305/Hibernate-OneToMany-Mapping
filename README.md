@@ -20,32 +20,6 @@ This project demonstrates the implementation of a **One-to-Manyrelationship** us
 - MySQL
 - Eclipse IDE
 
-## 📂 Project Structure
-
-```
-src/
-├── main/
-│   ├── java/
-│   │   ├── Dept.java
-│   │   ├── Emp.java
-│   │   └── DeptEmpSaveClient.java
-│   └── resources/
-│       ├── hibernate.cfg.xml
-│       └── Emp.hbm.xml
-```
-
-## 🗄 Database
-
-Database Name:
-
-```
-hibernate-ontomany
-```
-
-Tables:
-- dept
-- emp
-
 ## ▶️ How to Run
 
 1. Create a MySQL database named `hibernate-ontomany`.
@@ -54,14 +28,6 @@ Tables:
 4. Hibernate automatically creates the required tables.
 5. Department and Employee records are inserted successfully.
 
-## 🔗 Relationship
-
-```
-Department (1)
-     │
-     └────────► Employee (Many)
-```
-
 ## 📷 Output
 
 - Tables `dept` and `emp` are created.
@@ -69,6 +35,3 @@ Department (1)
 - Multiple employees are inserted.
 - Foreign key relationship is maintained successfully.
 
-## 👩‍💻 Author
-
-**Rishika Vangala**
